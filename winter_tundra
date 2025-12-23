@@ -1,0 +1,190 @@
+/* WOLVDEN PROFILE CSS — SUNSET TUNDRA (COHESIVE) */
+/* Paste EVERYTHING below into: Den → Settings → Profile CSS */
+
+/* ==================== GOOGLE FONT ==================== */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* ==================== GLOBAL ==================== */
+
+body {
+    background: url('https://p4.wallpaperbetter.com/wallpaper/368/992/890/earth-sunset-alaska-cloud-wallpaper-preview.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #000000 !important;
+    font-family: 'MedievalSharp', serif !important;
+}
+
+body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
+    color: #000000 !important;
+    font-family: 'MedievalSharp', serif !important;
+}
+
+* {
+    transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.25s ease;
+}
+
+/* ==================== WOLVDEN LOGO (FORCE ABOVE EVERYTHING) ==================== */
+
+#header,
+#header * {
+    overflow: visible !important;
+}
+
+#header .navbar-brand,
+#header .navbar-brand img {
+    position: relative !important;
+    z-index: 2147483647 !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+
+/* ==================== TOP BAR ==================== */
+
+#header .navbar-main,
+.navbar-status {
+    background: rgba(245, 225, 210, 0.55) !important;
+    border-bottom: 1px solid rgba(200, 180, 165, 0.8) !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(4px);
+}
+
+#header a,
+.navbar-status a {
+    color: #000000 !important;
+}
+
+/* ==================== SIDEBAR ==================== */
+
+#sidebar,
+#sidebar .card {
+    background: rgba(245, 235, 225, 0.45) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
+}
+
+#sidebar h3,
+#sidebar h4,
+#sidebar a {
+    color: #000000 !important;
+}
+
+/* ==================== MAIN PANELS ==================== */
+
+#main,
+.box,
+.container,
+.content,
+.card,
+.table {
+    background: rgba(250, 240, 230, 0.55) !important;
+    border: 1px solid rgba(210, 195, 180, 0.8) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.45) !important;
+}
+
+/* ==================== HEADERS ==================== */
+
+#main h1,
+#main h2.page-title {
+    background: rgba(255, 235, 220, 0.65) !important;
+    padding: 12px 20px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.6) !important;
+    text-align: center;
+}
+
+/* ==================== NAV TABS ==================== */
+
+.nav-tabs {
+    border: none !important;
+}
+
+.nav-tabs .nav-link {
+    background: rgba(240, 225, 210, 0.55) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    border-radius: 0 0 36px 36px !important;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    background: rgba(255, 240, 225, 0.75) !important;
+}
+
+/* ==================== WOLF IMAGES (MATCH SIDEBAR TRANSPARENCY) ==================== */
+
+.wolf-avatar,
+.lead-wolf img,
+.featured-wolf img {
+    border-radius: 50% !important;
+    background: rgba(245, 235, 225, 0.45) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ==================== TABLES ==================== */
+
+.table th {
+    background: rgba(255, 235, 220, 0.7) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(245, 230, 215, 0.55) !important;
+}
+
+/* ==================== STAT BARS ==================== */
+
+.progress {
+    background: rgba(230, 215, 200, 0.6) !important;
+}
+
+.bg-danger,
+.bg-warning,
+.bg-info,
+.bg-success {
+    background: rgba(255, 240, 225, 0.9) !important;
+}
+
+/* ==================== ALERTS ==================== */
+
+.alert {
+    background: rgba(255, 235, 220, 0.75) !important;
+    border: none !important;
+}
+
+/* ==================== ICONS & WOLF CARDS (NO GREYSCALE, CSS-TINTED) ==================== */
+
+/* Regular icons softly tinted to match theme */
+img.icon,
+img[src*="icon"],
+.small-icon {
+    filter: brightness(0.85) sepia(25%) saturate(120%) !important;
+}
+
+/* Wolf card listings retain natural color */
+.wolf-avatar img,
+.wolf-avatar,
+.lead-wolf img,
+.featured-wolf img {
+    filter: none !important;
+}
+
+
+/* ==================== SOFT WHITE HOVER GLOW ==================== */
+
+a:hover,
+button:hover,
+.card:hover,
+.box:hover,
+.table:hover,
+.nav-link:hover,
+#sidebar .card:hover,
+img:hover,
+.progress:hover,
+.alert:hover {
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.65) !important;
+}
+
+img:hover {
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
